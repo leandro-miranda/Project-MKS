@@ -4,6 +4,7 @@ import { Container } from './style';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store';
 import { getProductsAsync } from '../../store/Stock.store';
+import { LoadingSkeleton } from '../Skeleton';
 
 export function List() {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ export function List() {
 
   return (
     <Container>
+      <LoadingSkeleton />
       {cart.products.map(({ id, name, photo, price, description }, index) => (
         <Card
           key={index}
