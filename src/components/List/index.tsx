@@ -4,7 +4,6 @@ import { Container, SkeletonContainer } from './style';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store';
 import { getProductsAsync } from '../../store/Stock.store';
-import { LoadingSkeleton } from '../Skeleton';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
