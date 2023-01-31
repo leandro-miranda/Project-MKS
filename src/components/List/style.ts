@@ -12,3 +12,9 @@ export const Container = styled.div`
   gap: 22px;
   flex-wrap: wrap;
 `;
+
+export const SkeletonContainer = styled.div`
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+`;
